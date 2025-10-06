@@ -41,7 +41,7 @@ const first_limit_age = 18
 const last_limit_age = 65
 const price_km = 0.21
 
-console.log(first_limit_age, last_limit_age, price_km);
+console.log(first_limit_age, last_limit_age, price_km)
 
 const km_runs = Number(prompt ("inserisci km"))
 
@@ -53,11 +53,11 @@ if (age_utent < first_limit_age){
     sales = 20
 } else if (age_utent > last_limit_age){
     sales = 40
-} 
+}
 
 const final_price = ((km_runs * price_km) - ((km_runs * price_km) * sales / 100))
 const num = final_price.toFixed(2)
-console.log(num);
+console.log(num)
 
 
 
