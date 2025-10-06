@@ -49,15 +49,22 @@ const age_utent = Number(prompt ("inserisci l'età"))
 
 let sales = 0
 
+let ticket = km_runs * price_km
+
 if (age_utent < first_limit_age){
     sales = 20
+    ticket = ticket - (ticket * sales / 100)
+    
 } else if (age_utent > last_limit_age){
     sales = 40
+     ticket = ticket - (ticket * sales / 100)
 }
 
-const final_price = ((km_runs * price_km) - ((km_runs * price_km) * sales / 100))
-const num = final_price.toFixed(2)
+const num = ticket.toFixed(2)
 console.log(num)
+
+
+
 
 
 
