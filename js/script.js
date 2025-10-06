@@ -44,6 +44,14 @@ const sale_20 = 20%
 const sale_65 = 45%
 console.log(first_limit_age, last_limit_age, price_ten_km, sale_20, sale_65);
 
+const age_utent = Number(prompt ("inserisci l'età"))
+
+const sales = ((2.1 * 10) - 20%)
+console.log();
+
+
+
+
 
 
 
