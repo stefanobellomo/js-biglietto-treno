@@ -37,11 +37,8 @@ calcolare grazie alle prime variabili
 
 */
 
-const first_limit_age = 18
-const last_limit_age = 65
 const price_km = 0.21
-
-console.log(first_limit_age, last_limit_age, price_km)
+console.log(price_km)
 
 const km_runs = Number(prompt ("inserisci km"))
 
@@ -51,11 +48,11 @@ let sales = 0
 
 let ticket = km_runs * price_km
 
-if (age_utent < first_limit_age){
+if (age_utent < 18){
     sales = 20
     ticket = ticket - (ticket * sales / 100)
     
-} else if (age_utent > last_limit_age){
+} else if (age_utent > 65){
     sales = 40
      ticket = ticket - (ticket * sales / 100)
 }
