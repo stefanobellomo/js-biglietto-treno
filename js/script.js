@@ -39,26 +39,30 @@ calcolare grazie alle prime variabili
 
 const first_limit_age = 18
 const last_limit_age = 65
-const price_ten_km = 2.1
-const sale_20 = 20%;
-const sale_65 = 45%;
-console.log(first_limit_age, last_limit_age, price_ten_km, sale_20, sale_65);
+const price_km = 0.21
+
+console.log(first_limit_age, last_limit_age, price_km);
 
 const km_runs = Number(prompt ("inserisci km"))
 
 const age_utent = Number(prompt ("inserisci l'età"))
 
-
+let sales = 0
 
 if (age_utent < first_limit_age){
-    console.log()
+    sales = 20
 } else if (age_utent > last_limit_age){
-    console.log()   
-} else
+    sales = 40
+} 
+
+const final_price = ((km_runs * price_km) - ((km_runs * price_km) * sales / 100))
+console.log(final_price);
+
+
    
 
-const sales = (('price_ten_km' * 10) - 20%)
-console.log();
+// const sales = 
+// console.log();
 
 
 
