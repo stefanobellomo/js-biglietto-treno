@@ -56,13 +56,14 @@ if (age_utent < first_limit_age){
 } 
 
 const final_price = ((km_runs * price_km) - ((km_runs * price_km) * sales / 100))
-console.log(final_price);
+const num = final_price.toFixed(2)
+console.log(num);
+
+
 
 
    
 
-// const sales = 
-// console.log();
 
 
 
